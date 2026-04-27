@@ -1,6 +1,5 @@
 import { useState, useEffect } from 'react'
 import { NavLink, useLocation } from 'react-router-dom'
-import { motion, AnimatePresence } from 'framer-motion'
 import { Menu, X } from 'lucide-react'
 
 export default function Layout({ children }) {
@@ -49,17 +48,9 @@ export default function Layout({ children }) {
         </button>
       </nav>
 
-      <AnimatePresence mode="wait">
-        <motion.main
-          key={location.pathname}
-          initial={{ opacity: 0, y: 16 }}
-          animate={{ opacity: 1, y: 0 }}
-          exit={{ opacity: 0, y: -16 }}
-          transition={{ duration: 0.3, ease: 'easeOut' }}
-        >
-          {children}
-        </motion.main>
-      </AnimatePresence>
+      <main>
+        {children}
+      </main>
 
       <footer className="footer">
         <div className="footer-inner">
