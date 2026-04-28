@@ -104,18 +104,18 @@ export const projects = [
   {
     id: 'opswat',
     slug: 'opswat',
-    title: 'OPSWAT Security Platform',
-    tag: 'Cybersecurity Workflow · 2018 – 2020',
+    title: 'OPSWAT AI-powered Threat Detection Workflow',
+    tag: 'AI-powered Threat Detection · 2021 – 2022',
     shortDesc:
       'Designed threat detection and incident response workflows for security analysts, reducing triage time and improving cross-team coordination.',
     heroMetrics: [
-      { label: 'Triage time reduced', value: '60%' },
-      { label: 'False positive rate cut', value: '35%' },
+      { label: 'Reduction in workflow misconfiguration', value: '73%' },
+      { label: 'Ave time to publish (was 40+)', value: '11 min' },
       { label: 'SOC analysts supported', value: '500+' },
     ],
-    role: 'UI/UX Design, Interaction Design',
+    role: 'Lead Product Designer, Interaction Design',
     team: '6 Software Engineers, 1 Product Manager, Security team, 1 UX Researcher',
-    timeline: '2018 – 2020',
+    timeline: '2021 – 2022',
     company: 'OPSWAT',
     domain: 'Cybersecurity / SOC Operations',
     problem:

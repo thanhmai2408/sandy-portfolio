@@ -2,6 +2,7 @@ import { useParams, Link } from 'react-router-dom'
 import { motion } from 'framer-motion'
 import { projects } from '../data/projects'
 import { ArrowLeft, ArrowRight, Target, Search, PenTool, CheckCircle, Lightbulb, TrendingUp } from 'lucide-react'
+import JourneyMap from '../components/JourneyMap.jsx'
 
 const phaseIcons = {
   Research: Search,
@@ -65,6 +66,23 @@ export default function CaseStudy() {
         </div>
       </section>
 
+      {/* Context */}
+      {slug === 'opswat' && (
+        <motion.section
+          className="case-intro"
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5, delay: 0.2 }}
+        >
+          <div className="case-intro-inner">
+            <h2 className="case-intro-title">The Configuration Bottleneck</h2>
+            <p className="case-intro-text">
+              MetaDefender Core is OPSWAT's cybersecurity platform that scans every file entering critical infrastructure — airports, power grids, banks. Configuring its AI-powered detection engines used to require developer expertise, and "workflow misconfiguration" was the #1 support-ticket driver. I led the end-to-end redesign of the configuration experience, shipping a canvas-based Workflow Builder.
+            </p>
+          </div>
+        </motion.section>
+      )}
+
       {/* Metrics Strip */}
       <section className="case-metrics">
         <div className="case-metrics-inner">
@@ -82,6 +100,23 @@ export default function CaseStudy() {
           ))}
         </div>
       </section>
+
+      {/* Why this work mattered */}
+      {slug === 'opswat' && (
+        <motion.section
+          className="case-matter"
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, margin: '-40px' }}
+        >
+          <div className="case-matter-inner">
+            <h2>Why this work mattered</h2>
+            <p>
+              MetaDefender Core had powerful AI detection engines, but the interface to set them up was too complex. Most enterprise security teams don't have developers on staff — they rely on security admins to manage these tools. Those admins couldn't build multi-engine workflows without filing support tickets. The cutting-edge AI was trapped behind a clunky setup process. By redesigning the workflow builder, we made that AI accessible to the people who actually run security operations every day.
+            </p>
+          </div>
+        </motion.section>
+      )}
 
       <div className="case-body">
         <div className="case-body-inner">
@@ -127,6 +162,22 @@ export default function CaseStudy() {
               })}
             </div>
           </motion.section>
+
+          {/* Journey Map */}
+          {slug === 'opswat' && (
+            <motion.section
+              className="case-section"
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true, margin: '-40px' }}
+            >
+              <div className="case-section-header">
+                <Search size={20} />
+                <h2>User Journey Map</h2>
+              </div>
+              <JourneyMap />
+            </motion.section>
+          )}
 
           {/* Solution */}
           <motion.section
