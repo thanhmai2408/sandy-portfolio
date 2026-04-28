@@ -1,53 +1,54 @@
 export const projects = [
   {
-    id: 'servicenow',
-    slug: 'servicenow',
-    title: 'ServiceNow Platform',
-    tag: 'B2B Enterprise Workflow · 2022 – 2024',
+    id: 'workforce-insight',
+    slug: 'workforce-insight',
+    title: 'Workforce & Career Planning Insight',
+    tag: 'Workforce Insights · 2020 – 2021',
     shortDesc:
-      'Led design for enterprise IT and HR workflow modules, reducing task completion time and unifying the platform experience across 15+ product teams.',
+      'Designed a leadership workforce insight tool enabling Directors and Managers to visualize team capacity, track career progression, and make data-driven staffing and development decisions.',
     heroMetrics: [
-      { label: 'Product teams aligned', value: '15+' },
-      { label: 'Workflow modules shipped', value: '6' },
-      { label: 'User tasks streamlined', value: '40%' },
+      { label: 'Director & Manager roles supported', value: '50+' },
+      { label: 'Workforce decisions accelerated', value: '40%' },
+      { label: 'Career paths visualized', value: '1,000+' },
     ],
-    role: 'Senior Product Designer',
-    timeline: '2022 – 2024',
+    role: 'UI/UX Design, Visual Design, Interaction Design',
+    team: '5 Software Engineers, 1 Product Manager, HR team, 1 Senior UX Researcher',
+    timeline: '2020 – 2021 (1 year)',
     company: 'ServiceNow',
-    domain: 'B2B SaaS / Enterprise Workflow',
+    domain: 'Workforce Analytics / People Operations',
     problem:
-      'Enterprise users were bouncing between fragmented modules to complete cross-functional workflows. Each team had its own visual language, interaction patterns, and navigation model, creating a steep learning curve and high support ticket volume.',
+      'Design a workforce insight dashboard that gives Directors and Managers unified visibility into team capacity, skill gaps, and career progression to accelerate data-driven staffing and development decisions.',
     process: [
       {
         phase: 'Research',
         detail:
-          'Conducted 30+ interviews with IT admins and HR operators. Mapped end-to-end workflow journeys to identify breakage points across modules.',
+          'Interviewed 20+ Directors and Managers across engineering, sales, and operations. Mapped their workforce planning workflows and identified pain points in team visibility and career tracking.',
       },
       {
         phase: 'Synthesis',
         detail:
-          'Created a unified journey map and identified 12 shared interaction patterns. Prioritized the 4 highest-impact patterns for standardization.',
+          'Created personas for leadership roles and identified 5 core workforce planning scenarios. Prioritized team capacity planning and career development tracking as the highest-impact features.',
       },
       {
         phase: 'Design',
         detail:
-          'Designed a scalable workflow canvas and task panel system. Built Figma prototypes with conditional logic and multi-step approval flows.',
+          'Designed an interactive dashboard with team composition visualizations, skill gap heatmaps, and career trajectory timelines. Built prototypes for workforce planning and succession planning workflows.',
       },
       {
         phase: 'Validation',
         detail:
-          'Ran moderated usability tests with 12 enterprise users. Iterated on approval flow density and mobile responsiveness.',
+          'Tested with 12 Directors and Managers using real workforce data. Iterated on visualization density, filtering controls, and export capabilities for executive presentations.',
       },
     ],
     solution:
-      'A unified workflow designer and task execution experience that standardizes navigation, actions, and feedback across ITSM, HRSD, and CSM modules. Reduced context switching and cut onboarding time for new admins by 40%.',
+      'A workforce insight dashboard that gives Directors and Managers real-time visibility into team structure, skill coverage, and career progression. Interactive planning tools replace static reports, enabling data-driven staffing and development decisions.',
     outcomes: [
-      'Reduced workflow setup time by 40% for new admins',
-      'Unified 6 modules under a single interaction framework',
-      'Cut support tickets related to navigation confusion by 35%',
+      'Accelerated workforce planning decisions by 40%',
+      'Supported 50+ Director and Manager roles with unified team visibility',
+      'Visualized 1,000+ employee career paths for development planning',
     ],
     reflection:
-      'The hardest part was getting 15 product teams to agree on one button placement. I learned that design systems are 80% politics and 20% pixels. Building live-coded prototypes alongside Figma mocks helped engineers visualize the end state and accelerated buy-in.',
+      'Designing for leadership audiences taught me the importance of respecting their time. Every visualization had to answer a specific question in under 10 seconds. I learned that the best executive tools feel like they are reading your mind — surfacing the right insight before you ask for it.',
   },
   {
     id: 'hologic',
@@ -61,12 +62,13 @@ export const projects = [
       { label: 'Data entry errors reduced', value: '55%' },
       { label: 'Scheduling time saved', value: '30%' },
     ],
-    role: 'Product Designer',
+    role: 'UI/UX Design, Visual Design, Interaction Design',
+    team: '4 Software Engineers, 1 Product Manager, Clinical team, 1 UX Researcher',
     timeline: '2020 – 2022',
     company: 'Hologic',
     domain: 'Healthcare / Medical Devices',
     problem:
-      'Clinical staff were spending excessive time on manual data entry and appointment coordination across fragmented systems. Errors in patient scheduling led to missed appointments and delayed diagnostic results, impacting patient outcomes.',
+      'Redesign diagnostic imaging and patient scheduling workflows to cut data entry errors and streamline coordination across clinical staff.',
     process: [
       {
         phase: 'Research',
@@ -111,12 +113,13 @@ export const projects = [
       { label: 'False positive rate cut', value: '35%' },
       { label: 'SOC analysts supported', value: '500+' },
     ],
-    role: 'UX Designer',
+    role: 'UI/UX Design, Interaction Design',
+    team: '6 Software Engineers, 1 Product Manager, Security team, 1 UX Researcher',
     timeline: '2018 – 2020',
     company: 'OPSWAT',
     domain: 'Cybersecurity / SOC Operations',
     problem:
-      'Security analysts were drowning in alert noise. Threat investigation required jumping between 4+ tools, and false positives consumed 40% of analyst time. Cross-team coordination during incidents was chaotic, with no shared situational awareness.',
+      'Design a unified threat detection and incident response platform to reduce alert triage time and improve cross-team coordination for security analysts.',
     process: [
       {
         phase: 'Research',

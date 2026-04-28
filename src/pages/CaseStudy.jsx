@@ -49,12 +49,16 @@ export default function CaseStudy() {
                 <span className="case-meta-value">{project.role}</span>
               </div>
               <div className="case-meta">
-                <span className="case-meta-label">Timeline</span>
-                <span className="case-meta-value">{project.timeline}</span>
+                <span className="case-meta-label">Team</span>
+                <span className="case-meta-value">{project.team}</span>
               </div>
               <div className="case-meta">
                 <span className="case-meta-label">Domain</span>
                 <span className="case-meta-value">{project.domain}</span>
+              </div>
+              <div className="case-meta">
+                <span className="case-meta-label">Timeline</span>
+                <span className="case-meta-value">{project.timeline}</span>
               </div>
             </div>
           </motion.div>

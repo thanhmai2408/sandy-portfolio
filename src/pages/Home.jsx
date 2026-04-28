@@ -395,7 +395,7 @@ export default function Home() {
             transition={{ delay: 0.6 }}
           >
             {[
-              { icon: Briefcase, label: 'ServiceNow' },
+              { icon: Briefcase, label: 'Workforce Insight' },
               { icon: ShieldCheck, label: 'OPSWAT' },
               { icon: Layers, label: 'Hologic' },
               { icon: Code2, label: 'Vibe Coder' },
@@ -597,8 +597,8 @@ export default function Home() {
             {[
               { value: '60%', label: 'Reduction in security triage time', context: 'OPSWAT' },
               { value: '55%', label: 'Cut in healthcare data entry errors', context: 'Hologic' },
-              { value: '40%', label: 'Faster workflow setup for new admins', context: 'ServiceNow' },
-              { value: '15+', label: 'Product teams aligned under one design system', context: 'ServiceNow' },
+              { value: '40%', label: 'Faster workforce planning decisions', context: 'Workforce Insight' },
+              { value: '50+', label: 'Leadership roles with unified team visibility', context: 'Workforce Insight' },
             ].map((item, i) => (
               <motion.div
                 className="impact-card"
