@@ -47,8 +47,9 @@ export default function DesignRequirements() {
   return (
     <motion.section className="case-section" initial={{opacity:0,y:20}} whileInView={{opacity:1,y:0}} viewport={{once:true,margin:'-40px'}}>
       <div className="case-section-header"><Table2 size={20}/><h2>Design Requirements Matrix</h2></div>
-      <div className="req-table-wrap">
-        <table className="req-table">
+      <div className="req-breakout">
+        <div className="req-table-wrap">
+          <table className="req-table">
           <thead><tr>
             <H l="ID" k="id"/><H l="Feature" k="feature"/><H l="Phase" k="phase"/>
             <H l="Journey" k="journey"/><H l="Priority" k="priority"/><H l="Status" k="status"/>
@@ -71,7 +72,8 @@ export default function DesignRequirements() {
               </tr>
             ))}
           </tbody>
-        </table>
+          </table>
+        </div>
       </div>
       <div className="req-legend">
         <span><span className="req-dot req-p0"/>P0</span>

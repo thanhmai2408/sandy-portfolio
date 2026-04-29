@@ -1886,6 +1886,20 @@ body {
 }
 
 /* ─── Design Requirements Matrix ─── */
+.req-breakout {
+  width: 100vw;
+  margin-left: calc(-50vw + 50%);
+  position: relative;
+  max-width: none;
+  box-sizing: border-box;
+}
+.req-breakout .req-table-wrap {
+  overflow-x: auto;
+  border-top: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
+  background: var(--bg);
+  padding: 0 48px;
+}
 .req-table-wrap {
   overflow-x: auto;
   border: 1px solid var(--border);
@@ -1984,9 +1998,11 @@ body {
   flex-wrap: wrap;
   gap: 12px;
   align-items: center;
-  margin-top: 12px;
+  margin: 12px auto 0;
   font-size: 12px;
   color: var(--muted);
+  max-width: 900px;
+  padding: 0 48px;
 }
 .req-legend span {
   display: inline-flex;
