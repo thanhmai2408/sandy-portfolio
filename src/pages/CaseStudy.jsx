@@ -3,6 +3,8 @@ import { motion } from 'framer-motion'
 import { projects } from '../data/projects'
 import { ArrowLeft, ArrowRight, Target, Search, PenTool, CheckCircle, Lightbulb, TrendingUp } from 'lucide-react'
 import JourneyMap from '../components/JourneyMap.jsx'
+import HighLevelGoals from '../components/HighLevelGoals.jsx'
+import DesignRequirements from '../components/DesignRequirements.jsx'
 
 const phaseIcons = {
   Research: Search,
@@ -77,7 +79,7 @@ export default function CaseStudy() {
           <div className="case-intro-inner">
             <h2 className="case-intro-title">The Configuration Bottleneck</h2>
             <p className="case-intro-text">
-              MetaDefender Core is OPSWAT's cybersecurity platform that scans every file entering critical infrastructure — airports, power grids, banks. Configuring its AI-powered detection engines used to require developer expertise, and "workflow misconfiguration" was the #1 support-ticket driver. I led the end-to-end redesign of the configuration experience, shipping a canvas-based Workflow Builder.
+              MetaDefender Core is OPSWAT's cybersecurity platform that scans every file entering critical infrastructure — airports, power grids, banks. Workflow configuration used to require developer expertise, and "workflow misconfiguration" was the #1 support-ticket driver. I led the end-to-end redesign of the configuration experience, shipping a canvas-based Workflow Builder.
             </p>
           </div>
         </motion.section>
@@ -112,56 +114,19 @@ export default function CaseStudy() {
           <div className="case-matter-inner">
             <h2>Why this work mattered</h2>
             <p>
-              MetaDefender Core had powerful AI detection engines, but the interface to set them up was too complex. Most enterprise security teams don't have developers on staff — they rely on security admins to manage these tools. Those admins couldn't build multi-engine workflows without filing support tickets. The cutting-edge AI was trapped behind a clunky setup process. By redesigning the workflow builder, we made that AI accessible to the people who actually run security operations every day.
+              METADEFENDER Core sits at the perimeter of critical infrastructure. Every file that enters a protected environment — a power grid control system, an airport network, a financial trading floor — passes through its processing engines. But the interface for orchestrating them was outdated. Security admins couldn't configure multi-engine pipelines without writing support tickets.
             </p>
           </div>
         </motion.section>
       )}
 
+      {/* High Level Goals */}
+      {slug === 'opswat' && <HighLevelGoals />}
+
       <div className="case-body">
         <div className="case-body-inner">
-          {/* Problem */}
-          <motion.section
-            className="case-section"
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true, margin: '-40px' }}
-          >
-            <div className="case-section-header">
-              <Target size={20} />
-              <h2>Problem</h2>
-            </div>
-            <p className="case-section-text">{project.problem}</p>
-          </motion.section>
-
-          {/* Process */}
-          <motion.section
-            className="case-section"
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true, margin: '-40px' }}
-          >
-            <div className="case-section-header">
-              <PenTool size={20} />
-              <h2>Process</h2>
-            </div>
-            <div className="process-steps">
-              {project.process.map((step, i) => {
-                const Icon = phaseIcons[step.phase] || Lightbulb
-                return (
-                  <div className="process-step" key={i}>
-                    <div className="process-step-icon">
-                      <Icon size={18} />
-                    </div>
-                    <div className="process-step-body">
-                      <h3>{step.phase}</h3>
-                      <p>{step.detail}</p>
-                    </div>
-                  </div>
-                )
-              })}
-            </div>
-          </motion.section>
+          {/* Design Requirements Matrix */}
+          {slug === 'opswat' && <DesignRequirements />}
 
           {/* Journey Map */}
           {slug === 'opswat' && (
